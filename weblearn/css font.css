@@ -1,4 +1,39 @@
 .bodyintroduction h1{
-	color : #ffbf00;
-	font-size: 24px;
+	font-family: helvetica;
+	color : #8000ff;
+	font-size: 26px
+	
 }
+
+.bodyintroduction h2{
+	font-family: helvetica;
+	color : #bf00ff;
+	font-size: 22px;
+}
+
+.bodyintroduction p{
+	font-family: Times New Roman;
+	text-align : justify;
+	font-size : 17px;
+	
+}
+.bodyintroduction li{
+	font-family: Times New Roman;
+	text-align : left;
+	font-size : 16px;
+	
+}
+
+.bodyexample p{
+	font-family: Times New Roman;
+	text-align: center;
+	font-size : 12px;
+}
+
+.bgimage {
+	background-image: url("unicorn.jpg");
+	width: 300px;
+	height: 300px;
+
+}
+
