@@ -1,7 +1,8 @@
 .bodyintroduction h1{
 	font-family: helvetica;
 	color : #8000ff;
-	font-size: 26px
+	font-size: 26px;
+	position: relative;
 	
 }
 
@@ -9,18 +10,23 @@
 	font-family: helvetica;
 	color : #bf00ff;
 	font-size: 22px;
+	position: relative;
 }
 
 .bodyintroduction p{
 	font-family: Times New Roman;
 	text-align : justify;
 	font-size : 17px;
+	color: #fcfdff;
+	position: relative;
 	
 }
 .bodyintroduction li{
 	font-family: Times New Roman;
 	text-align : left;
 	font-size : 16px;
+	color: #fcfdff;
+	position: relative;
 	
 }
 
@@ -28,12 +34,22 @@
 	font-family: Times New Roman;
 	text-align: center;
 	font-size : 12px;
+	color: #fcfdff;
+	position: relative;
 }
 
 .bgimage {
 	background-image: url("unicorn.jpg");
-	width: 300px;
-	height: 300px;
+	position: relative;
+}
 
+.bgimage:before{
+	content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
 }
 
