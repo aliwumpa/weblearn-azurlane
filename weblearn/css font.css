@@ -1,8 +1,13 @@
+body{
+	background-image: linear-gradient(to top left, #cc99ff 0%, #ffffff 100%);
+	
+}
 #headpage{
 	width: 960px;
 	margin: 0 auto;
-	border: 1px solid #a7d7f9;
+	border: 2px solid #8000ff;
 	padding:1em;
+	background-color:#ffffff;
 	overflow: hidden;
 }
 
@@ -19,6 +24,7 @@
 #mainmenu{
 	list-style: none;
 	margin-left : -25px;
+
 
 }
 
@@ -48,26 +54,86 @@
 
 #sidebarlist{
 	float:left;
-	width:250px;
-	margin-top:10px;
+	width:230px;
+	height:100%;
+	margin-top:-190px;
+	border-right: 1px solid #bf00ff;
+
+}
+
+.logo{
+	background-image: url("placeholder.png");
+	background-repeat: no-repeat;
+	height: 230px;
+	width: 230px;
+	background-position: center center;
+	margin-top :-13px;
+
+}
+
+#sidebarlist h1{
+	font-size: 21px;
+	text-align: center;
+	margin-top:-10px;
+}
+
+
+#sidebarlist h2{
+	font-size : 16px;
+	text-align: left;
+	margin-top:-5px;
+	margin-left:15px;
+
 }
 
 #sidebarlist li{
-
+	list-style-type:square; 
 }
 
 #bodycontent{
 	width: 960px;
 	margin-top: 10px;
 	margin-left: 255px;
-	border: 1px solid #a7d7f9;
+	border: 1px solid #bf00ff;
 	padding:1em;
+	background-color:#ffffff;
 	overflow: hidden;
+}
+
+.boxalprofile{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
+	margin-bottom: 5px;
+}
+
+.boxaldefinition{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
+	margin-bottom: 5px;
+}
+
+.tableEx1 td{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.boxUI{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
 }
 
 .bodyintroduction h1{
 	font-family: helvetica;
-	color : #8000ff;
+	border-bottom: 1px solid;
 	font-size: 26px;
 	position: relative;
 	
@@ -75,31 +141,44 @@
 
 .bodyintroduction h2{
 	font-family: helvetica;
-	color : #bf00ff;
-	font-size: 22px;
+	background-color : #cc99ff;
+	padding : 4px;
+	font-size: 20px;
+	margin-top:0px;
 	position: relative;
 }
 
 .bodyintroduction p{
-	font-family: Times New Roman;
+	font-family: sans-serif;
 	text-align : justify;
-	font-size : 17px;
+	font-size : 15px;
 	position: relative;
 	
 }
 .bodyintroduction li{
-	font-family: Times New Roman;
+	font-family: sans-serif;
 	text-align : left;
-	font-size : 16px;
+	font-size : 14px;
 	position: relative;
 	
 }
 
-.bgimage {
-	background-image: url("whiteblue.jpg");
-	position:relative;
-	background-repeat: repeat-x;
+.boxUIlist ol{
 	
+}
+
+.battledatatable table{
+	border-collapse:collapse;
+}
+
+.battledatatable table,tr,td{
+	border:1px solid black;
+	padding :2px;
+	margin-bottom: 3px;
+}
+
+#footer{
+	text-align: center;
 }
 
 
