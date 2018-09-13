@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<title>Admiral Tsuki Daijobu</title>
+			<title>TsukiDaijobu Azur Lane Introduction</title>
+			
 			<meta charset="UTF-8">
 			<link rel="stylesheet" href="css font.css">
 	</head>
 
 	<body>
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script>
+			$(document).ready(function(){
+				$("#includedheader").load("header.html");
+				$("#includedsidebar").load("sidebar.html");
+			});	
+			</script>
 		<div id="headpage">
 				<div id="header">
-				<ul id="mainmenu">
-					<li><a href="">Main Page</a></li>
-					<li><a href="">About me</a></li>
-				</ul>
-				<p>Copyright disclaimer,main source of header image on this link <a href="https://www.deviantart.com/eriri94/art/Azur-Lane-Bismarck-715503419">https://www.deviantart.com/eriri94/art/Azur-Lane-Bismarck-715503419</a></p>
-			</div>
+		<div id="includedheader"></div>
+		</div>
 		</div>
 		<div id="sidebarlist">
 		<div class ="logo">
 		</div>
-		<h1>Sidebar Content</h1>
-		<h2>My ingame information</h2>
-		<ul>
-			<li><a href="">My dockyard</a></li>
-			<li><a href="">My fleet</a></li>
-			<li><a href="">My living area</a></li>
-			<li><a href="">Discussion</a></li>
-		</ul>
+		<div id="includesidebar"></div>
 		</div>
 		<div id="bodycontent">	
 			<div class="bodyintroduction">
 			<h1>INTRODUCTION</h1>
 			<div class="boxalprofile">
 			<h2>Azur Lane Profile</h2>
-			<img src= "profile.png" alt="profile azur lane" width=550 height=350>
-			<p>Hello :) and welcome to my website,My name is Ali Wumpa i'm the person who own this Azur Lane profile with IGN Tsuki Daijobu.I'm create this website just for fun and trying to develop my skill in web development.Also i want to share my azur lane experience to you guys for this website content.</p>
+			<img src= "weblearn/profile.png" alt="profile azur lane" width=550 height=350 class="imgprofile">
+			<p>Hello :) and Welcome to my website.My name is Ali Wumpa, i'm the person who own this Azur Lane profile with IGN Tsuki Daijobu.I'm create this website just for fun and trying to develop my skill in web development.Also i want to share my Azur Lane experience to you guys for this website content.</p>
 			</div>
 			<div class="boxaldefinition">
 			<h2>What is Azur Lane ?</h2>
@@ -46,34 +42,32 @@
  					<li>Treasure node : an opponent's fleet with treasure ship which give us an equipment box or coin.</li>
  					<li>Boss node : a boss opponent's fleet that unlocked in the map after taking down a few normal node.</li>
  				</ul>
- 			<div class="tableEx1">
- 			<table>
+ 			<table class="tableEx1">
  				<tr>
  					<td>(1)in-node gameplay</td>
  					<td>(2)exploration node in map</td>
  				</tr>
  				<tr>	
- 			<td><img src="gameplay.jpg" alt="gameplay azur lane" width=450 height=260></td>
- 			<td><img src="node.png" alt="node azur lane" width=450 height=260></td>
+ 			<td><img src="weblearn/gameplay.jpg" alt="gameplay azur lane" width=450 height=260 class="imgNode"></td>
+ 			<td><img src="weblearn/node.png" alt="node azur lane" width=450 height=260 class="imgNode"></td>
  				</tr>
  			</table>
- 			</div>
  			</div>
 
  			<div class="boxUI">
  			<h2>User Interface Azur Lane</h2>
- 			<img src="main menu.png" alt="main menu azur lane" width=680 height=400>
- 			<p>This is main menu display in Azur Lane,as you can see there are many moonrunes of japanese that you probably can't understand.So on this section i will explain to you the functional of these features on main menu: </p>
+ 			<img src="weblearn/main menu.png" alt="main menu azur lane" width=680 height=400 class="imgUI">
+ 			<p>This is the main menu display in Azur Lane. As you can see, there are many moonrunes of japanese that you probably can't understand.So on this section i will explain to you the functional of these features on main menu: </p>
  			<div class = "UIlist">
  				<ol>
  					<li>Admiral's profile : this is your account status information
- 					<table>
+ 					<table class="tableimg">
  					<tr>
- 					<td><img src ="battledata.png" alt="battle data azur lane"></td>
+ 					<td><img src ="weblearn/battledata.png" alt="battle data azur lane" class="imgbattledata"></td>
  					</tr>
  					</table>
- 					<p style="margin-bottom: 2px;">Japanese moonrunes translate are on this table below : </p> 
- 					<div class=battledatatable>
+ 					<p style="margin-bottom: 1px;">Japanese moonrunes translate are on this table below : </p> 
+ 					<div class= "battledatatable">
  					<table>
  						<tr>
  						<td colspan= 2 style="text-align: center;">Battle Data</td>
@@ -92,34 +86,57 @@
  					</table>
  					</div>
  					</li>
- 					<li>Gem's Store : place for spend your gem to buy exclusive skin,packaged item(cube,coin,oil,and drill.<em>Whaler</em> usually buy this XD,and other things like wedding ring,expand dockyard and equipment etc.</li>
- 					<li>Dockyard : this is your ship's place,you can uncap,retrofit,and adjust equipment for your ship in Dockyard.</li>
- 					<li>Equipment : you can access your weapon for a ship from here.there are 4 different tab in this feature.
+ 					<li>Gem's Store : A place for you to spend your gem to buy exclusive skin, packaged item to get cube, coin, oil, and drill.(<em>Whaler</em> usually buy this XD) And other things like wedding ring, expand dockyard and equipment etc.</li>
+ 					<li>Dockyard : this is your ship's place. You can uncap, retrofit, and adjust equipment for your ship in Dockyard.</li>
+ 					<li>Equipment : you can access your ship's weapon from here. There are 4 different tabs in this feature.
  						<ul>
- 							<li>Design : design weapon to create weapon for your ship. (gambar menyusul)</li>
- 							<li>Destroy : scrap your weapon into coin and plat for upgrading weapon. (gambar menyusul)</li>
- 							<li>Equipment : list of weapon you get from map or from tech box and you can see detailed information like damage,fire power etc of weapon in here. (gambar menyusul)</li>
- 							<li>Material : list of material/item like food,techbox,blueprint,upgrade plat,etc. (gambar menyusul)</li>
+ 			
+ 							<li>Design : Manufacture a weapon for your ships.</li>
+ 							<img src="weblearn/design.png" alt="design azur lane" width = 600 height = 370 class="imgEQ">
+ 							<li>Destroy : scrap your weapon into coins and plat to be used for upgrading weapons. (gambar menyusul nigga)</li>
+ 							<li>Equipment : list of weapon that you got from map or tech box and you can see the detailed information like damage, fire power etc of your arsenal in here.</li>
+ 							<img src="weblearn/equipment.png" alt="equipment azur lane" width= 600 height = 370 class="imgEQ">
+ 							<li>Material : list of materials/items like food, techbox, blueprint, upgrade plat,etc.</li>
+ 							<img src="weblearn/material.png" alt="material azur lane" width= 600 height = 370 class="imgEQ">
  						</ul>
  					</li>
- 					<li>Living area : (penjelasan menyusul).</li>
- 					<li>Research : (penjelasan menyusul).</li>
- 					<li>Task : (penjelasan menyusul).</li>
- 					<li>Building : (penjelasan menyusul).</li>
- 					<li>Fleet/Guild : (penjelasan menyusul).</li>
- 					<li>Commision tab : (penjelasan menyusul).</li>
- 					<li>Fleet's ship : (penjelasan menyusul).</li>
- 					<li>Weigh Anchor : (penjelasan menyusul).</li>
- 					<li>Ongoing event : (penjelasan menyusul).</li>
+ 					<li>Living area : This feature divided into 2 sections : </li>
+ 					<ol>
+ 						<li>living room : A place to comfort your ship girl to raise their affection.</li>
+ 						<img src="weblearn/livingarea.png" alt="living area azur lane" width= 600 height = 370 class="imgliving">
+ 						<li>shop area : There are 3 sections with different function in this place : </li>
+ 							<ul>
+ 								<li>Store : a place to buy equipment (plat materials, food for living room, tech box).</li>
+ 								<img src="weblearn/supplies.png" alt="store azur lane" width= 600 height = 370 class="imgliving">
+ 								<li>Tactics : a place to upgrade ship girl's skills.</li>
+ 								<img src="weblearn/tactics.png" alt="tactics azur lane" width= 600 height = 370 class="imgliving">
+ 								<li>Classroom : a place to raise ship girl's experience.</li>
+ 								<img src="weblearn/classroom.png" alt="classroom azur lane" width= 600 height = 370 class="imgliving">
+ 							</ul>
+ 					</ol>
+ 					<li>Research : this feature allow you to get prior ship (exclusive ship's girl which can only be obtained by accomplishing 8 different tasks), blueprint and prior weapon's design.</li>
+ 					<li>Task : daily and weekly mission that could be completed (Highly recommended).</li>
+ 					<li>Building : there are 4 different section on this feature.</li>
+ 						<ul>
+ 							<li>Ship Construction : for building your ship girl.</li>
+ 							<li>Ship Construction Time : allow you to see how much time left for your ship to be constructed.</li>
+ 							<li>Exchange : allow you to exchange your medal points into materials or ship girl.</li>
+ 							<li>Reduce : allow you to deconstruct your ship girl into medal point (1 R rarity into 1 medal,1 SR rarity into 4 medals,1 SSR rarity into 10 medals).</li>
+ 						</ul>		
+ 					<li>Fleet/Guild : This feature allows you to form or find a guild.</li>
+ 					<li>Commision tab : Tab to check your expedition's countdown.</li>
+ 					<li>Fleet's ship : Create your ships girl's fleet formation.</li>
+ 					<li>Weigh Anchor : Launch your ship girl's to fight node in the map.</li>
+ 					<li>Ongoing event : Launch your ship girl's to map event. You can also check event progress and reward here.</li>
  				</ol>
  			</div>
- 				<p>usually,i refer all equipment gear,ship list and skill description also maintenance/update notification in <a href="https://azurlane.koumakan.jp/Azur_Lane_Wiki">azurlane.koumakan site</a></p>
+ 				<p>usually, I refer all equipment gear, ships list, skills description, and also maintenance/update notification in <a href="https://azurlane.koumakan.jp/Azur_Lane_Wiki">azurlane.koumakan site</a></p>
  	</div>	
 	</div>
 	</div>
 	
 	<div id="footer">
-		<p>copyright 2018 by Ali Wumpa also known Wumpa the Slavemancer :whip:</p>
+		<p>copyright 2018 by Ali Wumpa also known Wumpa the Saltmancer :whip:</p>
 	</div>
 
 

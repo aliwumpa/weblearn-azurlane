@@ -1,10 +1,14 @@
+/* WEBLEARN CSS */
+
 body{
 	background-image: linear-gradient(to top left, #cc99ff 0%, #ffffff 100%);
+
+
 	
 }
 #headpage{
 	width: 960px;
-	margin: 0 auto;
+	margin-left: 255px;
 	border: 2px solid #8000ff;
 	padding:1em;
 	background-color:#ffffff;
@@ -68,7 +72,6 @@ body{
 	width: 230px;
 	background-position: center center;
 	margin-top :-13px;
-
 }
 
 #sidebarlist h1{
@@ -83,21 +86,36 @@ body{
 	text-align: left;
 	margin-top:-5px;
 	margin-left:15px;
-
+	
 }
 
 #sidebarlist li{
 	list-style-type:square; 
 }
+#sidebarlist a{
+	color : #38004d;
+}
 
 #bodycontent{
 	width: 960px;
-	margin-top: 10px;
+	margin-top: 1em;
 	margin-left: 255px;
-	border: 1px solid #bf00ff;
+	border: 2px solid #8000ff;
 	padding:1em;
-	background-color:#ffffff;
+	background-color:#2e0b30;
 	overflow: hidden;
+}
+
+}
+
+.imgprofile{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	border:2px solid #601593;
+	border-radius: 7px;
+	padding:4px;
 }
 
 .boxalprofile{
@@ -106,7 +124,7 @@ body{
 	border-radius: 7px;
 	border:1px solid #bf00ff;
 	padding:4px;
-	margin-bottom: 5px;
+	margin-bottom: 1em;
 }
 
 .boxaldefinition{
@@ -115,13 +133,21 @@ body{
 	border-radius: 7px;
 	border:1px solid #bf00ff;
 	padding:4px;
-	margin-bottom: 5px;
+	margin-bottom: 1em;
+
+}
+
+.tableEx1{
+	margin-left: auto;
+	margin-right: auto;
+	
 }
 
 .tableEx1 td{
 	text-align: center;
-	text-decoration: underline;
+	text-decoration: underline;	
 }
+
 
 .boxUI{
 	background-color: #ffe6ff;
@@ -134,7 +160,9 @@ body{
 .bodyintroduction h1{
 	font-family: helvetica;
 	border-bottom: 1px solid;
+	border-bottom color: #ffffff;
 	font-size: 26px;
+	color: #ffffff;
 	position: relative;
 	
 }
@@ -148,23 +176,90 @@ body{
 	position: relative;
 }
 
-.bodyintroduction p{
-	font-family: sans-serif;
-	text-align : justify;
-	font-size : 15px;
-	position: relative;
-	
-}
-.bodyintroduction li{
+.boxalprofile p{
 	font-family: sans-serif;
 	text-align : left;
-	font-size : 14px;
+	font-size : 16px;
+	line-height: 1.4;
 	position: relative;
+}
+
+.boxaldefinition p{
+	font-family: sans-serif;
+	text-align : left;
+	font-size : 16px;
+	line-height: 1.4;
+	position: relative;
+}
+
+.boxaldefinition li{
+	font-family: sans-serif;
+	text-align : left;
+	font-size : 16px;
+	position: relative;
+	margin-top: 8px;
 	
 }
 
-.boxUIlist ol{
-	
+.imgNode{
+	box-sizing: border-box;
+	border:2px solid #601593;
+	border-radius: 7px;
+	padding:4px;
+}
+
+.boxUI p{
+	font-family: sans-serif;
+	text-align : left;
+	font-size : 16px;
+	line-height: 1.4;
+	position: relative;
+}
+
+.imgUI{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	border:2px solid #601593;
+	border-radius: 7px;
+	padding:4px;
+}
+
+.UIlist ul{
+	list-style-type: square;
+}
+
+.UIlist li{
+	font-family: sans-serif;
+	text-align : left;
+	font-size : 16px;
+	position: relative;
+	margin-top: 8px;
+}
+
+.imgbattledata{
+	box-sizing: border-box;
+	border:2px solid #601593;
+	border-radius: 7px;
+	padding:4px;
+	margin-top: 8px;
+}
+
+.imgEQ{
+	box-sizing: border-box;
+	border:2px solid #601593;
+	border-radius: 7px;
+	padding:4px;
+	margin-top: 8px;
+}
+
+.imgliving{
+	box-sizing: border-box;
+	border:2px solid #601593;
+	border-radius: 7px;
+	padding:4px;
+	margin-top: 8px;
 }
 
 .battledatatable table{
@@ -175,12 +270,161 @@ body{
 	border:1px solid black;
 	padding :2px;
 	margin-bottom: 3px;
+	margin-top: 5px;
 }
 
 #footer{
 	text-align: center;
 }
 
+/* DOCKYARD CSS */
+
+.bodydockyard{
+	width: 960px;
+	padding:1em;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	border: 2px solid #8000ff;
+	background-color:#2e0b30;
+}
+
+.bodydockyard table,tr,td{
+	border:none;
+}
+
+.bodydockyard h1{
+	font-family: helvetica;
+	border-bottom: 1px solid;
+	border-bottom color: #ffffff;
+	font-size: 26px;
+	color: #ffffff;
+	position: relative;
+}
+
+.bodydockyard h2{
+	font-family: helvetica;
+	background-color : #cc99ff;
+	padding : 4px;
+	font-size: 20px;
+	margin-top:0px;
+	position: relative;
+}
+
+.bodydockyard p{
+	font-family : sans-serif;
+	text-align : left; 
+	font-size: 16px;
+	line-height: 1.4;
+	position: relative;
+}
 
 
+.boxdockyarddef{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
+}
 
+.boxdockyardtype{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
+	margin-top:8px;
+}
+.boxdockyardtype li{
+	font-family: sans-serif;
+	text-align : left;
+	font-size : 16px;
+	position: relative;
+	margin-top: 8px;
+}
+
+.tableEx2{
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+.tableEx2 td{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.imgDockyard{
+	box-sizing: border-box;
+	border:2px solid #601593;
+	border-radius: 7px;
+	padding:4px;
+}
+
+/* FLEET CSS */
+.bodyfleet{
+	width: 960px;
+	padding:1em;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	border: 2px solid #8000ff;
+	background-color:#2e0b30;
+}
+
+.bodyfleet h1{
+	font-family: helvetica;
+	border-bottom: 1px solid;
+	border-bottom color: #ffffff;
+	font-size: 26px;
+	color: #ffffff;
+	position: relative;
+}
+
+.bodyfleet h2{
+	font-family: helvetica;
+	background-color : #cc99ff;
+	padding : 4px;
+	font-size: 20px;
+	margin-top:0px;
+	position: relative;
+}
+
+.boxfleetdef{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
+	margin-top:8px;
+}
+
+.boxquicktips{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
+	margin-top:8px;
+}
+
+.imgFleet{
+	box-sizing: border-box;
+	border:2px solid #601593;
+	border-radius: 7px;
+	padding:4px;
+}
+
+
+.tableuncap{
+	margin-left: auto;
+	margin-right: 20px;
+	text-align: center;
+}
+
+.table34{
+	margin-left: auto;
+	margin-right: 45px;
+	text-align: center;
+}
