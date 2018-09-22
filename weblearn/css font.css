@@ -273,6 +273,22 @@ body{
 	margin-top: 5px;
 }
 
+#buttonTop:hover{
+	opacity: 1;
+}
+
+#buttonTop{
+	position: fixed;
+	display: none;
+	background: linear-gradient(to top left, #cc99ff 0%, #ffffff 100%);
+	right : 55px;
+    bottom: 25px;
+	z-index: 2;
+	cursor: pointer;
+	transition: 0.3s;
+	opacity: 0.6;
+}
+
 #footer{
 	text-align: center;
 }
@@ -282,8 +298,8 @@ body{
 .bodydockyard{
 	width: 960px;
 	padding:1em;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 1em;
+	margin-left: 255px;
 	overflow: hidden;
 	border: 2px solid #8000ff;
 	background-color:#2e0b30;
@@ -366,8 +382,8 @@ body{
 .bodyfleet{
 	width: 960px;
 	padding:1em;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 1em;
+	margin-left: 255px;
 	overflow: hidden;
 	border: 2px solid #8000ff;
 	background-color:#2e0b30;
