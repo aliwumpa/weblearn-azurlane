@@ -1,2 +1,3 @@
 # weblearn-azurlane
-just for fun
+Simple Guide Azur Lane Game Website
+
