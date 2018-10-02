@@ -4,28 +4,26 @@
 	<title>My Fleet</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css font.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script> 
+      $(function(){
+      $("#IncludeMaintenance").load("maintenance.html");
+      $("#IncludeHeader").load("header.html");
+      $("#IncludeSidebar").load("sidebar.html");
+      $("#IncludeFooter").load("footer.html"); 
+    });
+    </script> 
 </head>
 <body>
 	<div id="headpage">
 				<div id="header">
-		<ul id="mainmenu">
-					<li><a href="weblearn.html">Main Page</a></li>
-					<li><a href="">About me</a></li>
-				</ul>
-				<p>Copyright disclaimer,main source of header image on this link <a href="https://www.deviantart.com/eriri94/art/Azur-Lane-Bismarck-715503419">https://www.deviantart.com/eriri94/art/Azur-Lane-Bismarck-715503419</a></p>
+		<div id="IncludeHeader"></div>
 		</div>
 		</div>
 		<div id="sidebarlist">
 		<div class ="logo">
 		</div>
-		<h1>Sidebar Content</h1>
-		<h2>My ingame information</h2>
-		<ul>
-			<li><a href="dockyard.html">My dockyard</a></li>
-			<li><a href="fleet.html">My fleet</a></li>
-			<li><a href="">My living area</a></li>
-			<li><a href="">Discussion</a></li>
-		</ul>
+		<div id="IncludeSidebar"></div>
 		</div>
 	
 	<div class = "bodyfleet">
@@ -121,10 +119,121 @@
 	<p>A few month has been passed...</p>
 	<p>Congratulations !</p>
 	<p>You are an Advaced Player now.</p>
-	<p>It's time you can feel the power of supreme,farm few meta ship on map 10,11 and 12 with full fleet and high cost oil</p>
+	<p>It's time you can feel the power of supreme from droppable meta ship on map 9,10,11 and 12.</p>
 	</ol>
 	</div> 
+	<div class = boxnoticed>
+	<h2>Droppable Ship Girl</h2>
+	<p>Doesn't matter how much your money in your credit card to buy gold and cube for gacha there are ship girl that <b>CAN ONLY BE OBTAINED FROM DROP REWARD</b> on certain map like Kaga and Akagi.</p>
+	<p>These ship girl will help you to become supreme commander and surpass other player progress both in PvE and PvP.Here below is list of droppable ship girl that you should be notice : </p>
+	<div class =fleetfontlist1>
+	<ol>
+
+		<li>Nicholas<br>
+		Nicholas is USS Destroyer ship type from Fletcher Class that can be obtain from map 9-3.This ship is good when it's paired with <a href ="https://azurlane.koumakan.jp/Helena">USS helena</a> because it's retrofit support skill to heal helena 8% of helena's max health.
+		<table class=tableNicholas>
+		<thead>
+		<tr>
+		<th bgcolor="#cc99ff" style="border-radius: 7px; padding: 3px">Default</th>
+		<th bgcolor="#cc99ff" style="border-radius: 7px; padding: 3px">Retrofit</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td width="450" style="padding-top: 20px; padding-left: 5px;"><img src="fleet/Nicholas.png" alt="nicholas picture azur lane" width=283 height=453 style="margin-left: 15px;"></td>
+		<td style="padding-top: 28px;"><img src="fleet/NicholasKai.png" alt="nicholas kai picture azur lane" width=428 height=493 style="margin-top: -28px; margin-left: 15px;"></td>
+		</tr>
+		</tbody>
+		</table></li>
+
+		<li>Niizuki<br>
+		Niizuki is IJN Destroyer ship type from Akizuki class that can be obtain from map 9-4.I would say Niizuki is cleveland version of IJN that would fit so well with other barrage DPS focusing ship in IJN.</li>
+		<table class=tableNiizuki>
+		<thead>
+		<tr>
+		<th bgcolor="#cc99ff" style="border-radius: 7px; padding: 3px">Default</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td><img src="fleet/Niizuki.png" alt="niizuki picture azur lane" width=410 height=416></td>	
+		</tbody>
+		</tr>
+		</tbody>
+		</table></li>
+
+		<li>Jintsuu<br>
+		Jintsuu is IJN Light Cruiser ship type from Sendai Class that can be obtain from map 10-4.This ship included in <b>BROKEN TIER LIST SHIP</b> because her skill,which is <b>Splendid 2nd Torpedo Squardon</b> to increases reload and torpedo stat for all CL and DD in the same fleet by 5%(20%) and <b>Unyielding Beast(Retrofit)</b> to Decreases damage taken to self by 20%. While alive in fleet, increases torpedo critical hit chance for all CL and DD in the same fleet by 4% (10%.) Starting from level 6 of the skill, also increases torpedo critical hit damage by 5% (30%).Pairing this ship with other DD on IJN such as Ayanami,Kawakaze,and Yukikaze is unbelivably good or you can pair it with other CL on IJN such as Niizuki an Sendai,it's depend your choice and gamestyle.
+		<table class=tableJintsuu>
+		<thead>
+		<tr>
+		<th bgcolor="#cc99ff" style="border-radius: 7px; padding: 3px">Default</th>
+		<th bgcolor="#cc99ff" style="border-radius: 7px; padding: 3px">Retrofit</th>
+		</tr>	
+		</thead>
+		<tbody>
+		<tr>
+		<td style="padding-top: 20px;"><img src="fleet/Jintsuu.png" alt="jintsuu picture azur lane" width=455 height=459></td>
+		<td style="padding-top: 20px; padding-left: 20px"><img src="fleet/JintsuuKai.png" alt="jintsuu kai picture azur lane" width=440 height=459></td>
+		</tr>
+		</tbody>	
+		</table>
+		</li>
+
+		<li>Sendai<br>
+		Sendai is IJN Light Cruiser ship type from Sendai Class that can be obtain from map 11-3.If you already have Jintsuu,you can pair this ship in one fleet with her for PvE or PvP purposes.What makes Sendai compatible with Jintsuu is her skill which is <b>Torpedo Fleet</b> to increases reload and torpedo stat for all CL and DD in the same fleet and <b>Flare(Retrofit)</b> to decrease evasion rate of enemy's fleet by 25% after 10 seconds battle begins also every 20s activate after first skill initiate.
+		<table class=tableSendai>
+		<thead>
+		<tr>
+		<th bgcolor="#cc99ff" style="border-radius: 7px; padding: 3px">Default</th>
+		<th bgcolor="#cc99ff" style="border-radius: 7px; padding: 3px">Retrofit</th>
+		</tr>	
+		</thead>
+		<tbody>
+		<tr>
+		<td style="padding-top: 20px;"><img src="fleet/Sendai.png" alt="sendai picture azur lane" width=478 height=459></td>
+		<td style="padding-top: 20px; padding-left: 20px"><img src="fleet/SendaiKai.png" alt="sendai kai picture azur lane" width=437 height=459></td>
+		</tr>
+		</tbody>		
+		</table>
+		</li>
+
+		<li>Columbia<br>
+		Columbia is Light Cruiser ship type from Cleveland Class that can be obtain from map 11-4.She is the second ship of the Cleveland class and the sister of USS Cleveland.Her skills is pretty same as <a href="https://azurlane.koumakan.jp/Cleveland">USS Cleveland</a> with addition <b>Flagship Protection</b> to Reduces the damage taken by the Flagship by 15%(25%). 
+		<table class=tableColumbia>
+		<thead>
+		<tr>
+		<th bgcolor="#cc99ff" style="border-radius: 7px; padding: 3px">Default</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td style="padding-top: 15px; padding-left: 20px"><img src="fleet/Columbia.png" alt="columbia picture azur lane" width=323 height=453></td>	
+		</tr>
+		</tbody>
+		</table></li>
+	</ol>
 	</div>
-	
+	</div>
+	</div>
+
+	<div id="IncludeFooter"></div>
+
+	<button onclick ="topfunction()" id="buttonTop" title="Back to top"><img src="Amazon.png" alt="amazon chibi icon" width=110 height=128></button>
+
+	<script>
+	window.onscroll = function() {scrollfunction()};
+		function scrollfunction(){
+			if(document.body.scrollTop > 450 || document.documentElement.scrollTop > 450){
+				document.getElementById("buttonTop").style.display = "block";
+			} else{
+				document.getElementById("buttonTop").style.display = "none";
+			}
+
+		}
+		function topfunction(){
+			$("html,body").stop().animate({scrollTop:0},800);
+		}
+	</script>
 </body>
 </html>

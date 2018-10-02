@@ -290,7 +290,12 @@ body{
 }
 
 #footer{
+	box-sizing:content-box;
+	background-color: #ffffff;
 	text-align: center;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border:1px solid #ffffff;
 }
 
 /* DOCKYARD CSS */
@@ -443,4 +448,164 @@ body{
 	margin-left: auto;
 	margin-right: 45px;
 	text-align: center;
+}
+
+.boxnoticed{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
+	margin-top:8px;
+}
+
+.tableNicholas{
+	margin-top: 8px;
+	margin-left: -15px;
+	text-align: center;
+}
+
+.tableNiizuki{
+	margin-top: 8px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center; 
+}
+
+.tableJintsuu{
+	margin-top: 8px;
+	margin-left: -22px;
+	text-align: center;
+}
+
+.tableSendai{
+	margin-top: 8px;
+	margin-left: -37px;
+	text-align: center;
+}
+
+.tableColumbia{
+	margin-top: 8px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+/*LIVING AREA CSS */
+
+.imgUnderConstruction{
+	box-sizing: border-box;
+	border:2px solid #601593;
+	border-radius: 7px;
+	padding:4px;
+	margin-left: 45px;
+
+}
+
+.bodylivingarea{
+	width: 960px;
+	padding:1em;
+	margin-top: 1em;
+	margin-left: 255px;
+	overflow: hidden;
+	border: 2px solid #8000ff;
+	background-color:#2e0b30;
+}
+
+/*DISCUSSION CSS */
+.bodydiscussion{
+	width: 960px;
+	padding:1em;
+	margin-top: 1em;
+	margin-left: 255px;
+	overflow: hidden;
+	border: 2px solid #8000ff;
+	background-color:#2e0b30;
+}
+
+
+
+
+/*ABOUT ME CSS */
+
+.bodyaboutme{
+	width: 960px;
+	padding:1em;
+	margin-top: 1em;
+	margin-left: 255px;
+	overflow: hidden;
+	border: 2px solid #8000ff;
+	background-color:#2e0b30;
+}
+
+.bodyaboutme h2{
+	font-family: helvetica;
+	background-color : #cc99ff;
+	padding : 4px;
+	font-size: 20px;
+	margin-top:0px;
+	
+}
+
+.boxaboutme{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
+	margin-top:8px;
+	padding-left: 15px;
+
+}
+
+.boxaboutme p{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: justify; 
+}
+
+.boxcontact{
+	background-color: #ffe6ff;
+	box-sizing: border-box;
+	border-radius: 7px;
+	border:1px solid #bf00ff;
+	padding:4px;
+	margin-top:8px;
+}
+
+.boxcontact li{
+	line-height: normal;
+	vertical-align: middle;
+	display: inline-block;
+	border-right:2px solid;
+	padding-right: 7px;
+	padding-left: 5px;
+}
+
+.imgProfile{
+	background-color: #061213;
+	box-sizing: border-box;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border:1px solid;
+	padding: 4px;
+	clip-path: polygon(0% 0%, 75% 0, 100% 50%, 75% 100%, 0 100%);
+	shape-outside: polygon(0% 0%, 75% 0, 100% 50%, 75% 100%, 0 100%);
+	float :left;
+}
+
+#buttonBack{
+	box-sizing: border-box;
+	border-radius: 8px;
+	border:1px solid;
+	background-color: #ffffff;
+	cursor: pointer;
+	z-index: 99;
+	left: 420px; 
+	font-size: 20px;
+	position: relative;
+	padding: 6px;
+}
+
+#buttonBack:hover{
+	transform: scale(1.1);
 }

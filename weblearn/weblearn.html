@@ -4,6 +4,15 @@
 			<title>TsukiDaijobu Azur Lane Introduction</title>
 			<meta charset="UTF-8">
 			<link rel="stylesheet" href="css font.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script>
+			$(function(){
+	 		$("#IncludeMaintenance").load("maintenance.html");
+			$("#IncludeHeader").load("header.html");
+     		$("#IncludeSidebar").load("sidebar.html");
+     		$("#IncludeFooter").load("footer.html");
+      });
+     </script>
 
 	</head>
 	
@@ -12,24 +21,13 @@
 		
 		<div id="headpage">
 				<div id="header">
-		<ul id="mainmenu">
-					<li><a href="weblearn.html">Main Page</a></li>
-					<li><a href="">About me</a></li>
-				</ul>
-				<p>Copyright disclaimer,main source of header image on this link <a href="https://www.deviantart.com/eriri94/art/Azur-Lane-Bismarck-715503419">https://www.deviantart.com/eriri94/art/Azur-Lane-Bismarck-715503419</a></p>
+		<div id="IncludeHeader"></div>
 		</div>
 		</div>
 		<div id="sidebarlist">
 		<div class ="logo">
 		</div>
-		<h1>Sidebar Content</h1>
-		<h2>My ingame information</h2>
-		<ul>
-			<li><a href="dockyard.html">My dockyard</a></li>
-			<li><a href="fleet.html">My fleet</a></li>
-			<li><a href="">My living area</a></li>
-			<li><a href="">Discussion</a></li>
-		</ul>
+		<div id="IncludeSidebar"></div>
 		</div>
 		<div id="bodycontent">	
 			<div class="bodyintroduction">
@@ -149,9 +147,7 @@
 
 	<button onclick ="topfunction()" id="buttonTop" title="Back to top"><img src="Amazon.png" alt="amazon chibi icon" width=110 height=128></button>
 	
-	<div id="footer">
-		<p>copyright 2018 by Ali Wumpa also known Wumpa the Saltmancer :whip:</p>
-	</div>
+	<div id="IncludeFooter"></div>
 	<script>
 	window.onscroll = function() {scrollfunction()};
 		function scrollfunction(){
@@ -163,9 +159,12 @@
 
 		}
 		function topfunction(){
-			document.documentElement.scrollTop = 0;
+			
+			$("html,body").stop().animate({scrollTop:0},800);
+
 		}
 	</script>
+
 
 
 	</body>
