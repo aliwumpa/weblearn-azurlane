@@ -523,6 +523,22 @@ body{
 	background-color:#2e0b30;
 }
 
+.bodydiscussion h2{
+	font-family: helvetica;
+	background-color : #cc99ff;
+	padding : 4px;
+	font-size: 20px;
+	margin-top:0px;
+	position: relative;
+}
+
+.commentdatabox{
+	height: 50px;
+	width: auto;
+	margin: 1em;
+	border-bottom: 1px;
+}
+
 
 
 
