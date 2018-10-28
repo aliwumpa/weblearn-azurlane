@@ -1,4 +1,4 @@
-/* WEBLEARN CSS */
+/* INDEX CSS */
 
 body{
 	background-image: linear-gradient(to top left, #cc99ff 0%, #ffffff 100%);
@@ -532,6 +532,15 @@ body{
 	position: relative;
 }
 
+#name-area{
+	font-size: 13px;
+	font-family: helvetica;
+	size=30;
+	padding: 4px;
+
+
+}
+
 .submitcomment textarea{
 	width: 100%;
 	height: 100px;
@@ -542,6 +551,7 @@ body{
 	background-color: #f8f8f8;
 	font-size: 16px;
 	font-family: helvetica;
+	margin-top: 10px;
 }
 
 .commentboxusername{
@@ -601,8 +611,8 @@ ul.listcomment-ul li.listcomment-li .commentuserimg{
 
 ul.listcomment-ul li.listcomment-li .commentuserimg img.userimg{
 	width: 65px;
-	height: auto;
-	margin: 5px;
+	height: 60px;
+	margin: 3px 3px 3px 3px;
 }
 
 ul.listcomment-ul li.listcomment-li:hover .buttonHolder{

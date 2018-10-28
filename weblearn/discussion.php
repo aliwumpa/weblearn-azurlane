@@ -29,33 +29,14 @@
 <div class=bodydiscussion>
 <h2>Comment Section</h2>
 <div class="submitcomment">
+  <p style="font-family: helvetica; color: #ffffff">Username : </p> <input type="text" name="namearea" id="name-area">
   <form class="formtextarea">
-    <textarea id="text-area">Comment here...</textarea>
+    <textarea id="text-area"></textarea>
   </form>
 <button onclick ="postComment()" id="buttonPost" title="Post Comment" style="float: right; margin-top: 3px; cursor: pointer;">Comment</button>
 </div>
 <div class="listcomment" style="margin-top: 35px;">
 <ul class="listcomment-ul">
-<li class="listcomment-li" id="_1">
-  <div class="commentbox">
-  <div class="commentuserimg">
-  <img src="#" class="userimg" />
-  </div>
-  <div class="commentboxusername">
-  Anonymous
-  </div>
-  <div class="commenttext">
-  The comment will be post in this area..
-  </div>
-  <div class="buttonHolder">
-  <ul>
-    <li class="buttonDel">X</li>
-  </ul>
-  </div>
-    
-  </div>
-  </div>
-</li>
 </ul>
 </div>
 </div>
@@ -69,21 +50,73 @@
 
 <script>
 function postComment(){
-  $("#buttonPost").click(function(){
+  
+    var _userID = 1;
     var text = $("#text-area").val();
+    var username = $("#name-area").val(); 
     if (text.length>0)
   {
     $(".formtextarea").css("border","1px solid #8c1aff")
-    console.log(text);
+
+    $.ajax(
+    {
+      type:"Post",
+      url:"commentajax.php",
+      data:{
+      task: "commentpost",
+      userID :_userID,
+      userNm: username,
+      comment : text
+    },
+    success: function(data)
+    { 
+      comment_insert();
+      console.log("response : " + data);
+    },
+    error: function()
+    {
+      console.log("Error : ");
+    }
+    });
+    
+    
+    console.log("User id : "+ _userID +" " + "Username : "+ username + " " + "comment : " + text)
 
   }
   else
   {
-     $(".formtextarea").css("border","2px solid #ff0000")
-    console.log("Fill in the text area.");
+     $("#text-area").css("border","2px solid #ff0000")
+    alert("Fill in the text area !");
   }
-  })
+  
 }
 
+function comment_insert(){
+    var t = '';
+    t += '<li class="listcomment-li" id="_1">';
+    t += '<div class="commentbox">';
+    t += '<div class="commentuserimg">';
+    t += '<img src="discussion/imgtester.png" class="userimg" />';
+    t += '</div>';
+    t += '<div class="commentboxusername">';
+    t += 'Anonymous';
+    t += '</div>';
+    t += '<div class="commenttext">';
+    t += 'New Comment';
+    t += '</div>';
+    t += '<div class="buttonHolder">';
+    t += '<ul>';
+    t += '<li class="buttonDel">X</li>';
+    t += '</ul>';
+    t += '</div>';
+    t += '</div>';
+    t += '</div>';
+    t += '</li>';
+
+    $(".listcomment-ul").prepend(t);
+
+  }
+
 </script>
+
 </html>
