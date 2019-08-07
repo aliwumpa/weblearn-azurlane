@@ -4,8 +4,7 @@
 	<title>Discussion</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css font.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 	 <script> 
       $(function(){
       $("#IncludeMaintenance").load("maintenance.html");
@@ -13,7 +12,8 @@
       $("#IncludeSidebar").load("sidebar.html");
       $("#IncludeFooter").load("footer.html");
     });
-    </script> 
+    </script>
+    
 </head>
 <body>
     <div id="headpage">
@@ -70,7 +70,7 @@ function postComment(){
     },
     success: function(data)
     { 
-      comment_insert();
+      comment_insert(jQuery.parseJSON(data));
       console.log("response : " + data);
     },
     error: function()
@@ -91,19 +91,15 @@ function postComment(){
   
 }
 
-function comment_insert(){
+function comment_insert( data ){
     var t = '';
-    t += '<li class="listcomment-li" id="_1">';
+    t += '<li class="listcomment-li" id="_'+data.commentID+'">';
     t += '<div class="commentbox">';
     t += '<div class="commentuserimg">';
-    t += '<img src="discussion/imgtester.png" class="userimg" />';
+    t += '<img src="'+data.profile_img+'" class="userimg" />';
     t += '</div>';
-    t += '<div class="commentboxusername">';
-    t += 'Anonymous';
-    t += '</div>';
-    t += '<div class="commenttext">';
-    t += 'New Comment';
-    t += '</div>';
+    t += '<div class="commentboxusername">'+data.userNm+'</div>';                                     
+    t += '<div class="commenttext">'+data.comment+'</div>';                
     t += '<div class="buttonHolder">';
     t += '<ul>';
     t += '<li class="buttonDel">X</li>';

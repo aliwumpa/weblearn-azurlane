@@ -3,14 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css font.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+	<script>
+		$(function(){
+			$("#IncludeLogin").load("login.php");
+		});
+
+	</script>
 </head>
 <body>
 		
 				<ul id="mainmenu">
 					<li><a href="index.html">Main Page</a></li>
 					<li><a href="aboutme.html">About me</a></li>
+					<li><div id="IncludeLogin"></div></li>
 				</ul>
+
 				<p>Copyright disclaimer,main source of header image on this link <a href="https://www.deviantart.com/eriri94/art/Azur-Lane-Bismarck-715503419">https://www.deviantart.com/eriri94/art/Azur-Lane-Bismarck-715503419</a></p>
+
 			
 </body>
 </html>
