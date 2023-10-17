@@ -4,9 +4,7 @@
 	<title>Research Shipworks</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css font.css">
-	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/vue/dist/vue.min.js"></script>
 	<script>
 		$(function(){
 	 		$("#IncludeMaintenance").load("maintenance.html");
@@ -51,16 +49,8 @@
 
     	.imageship table{
     		display: inline;
-/*    		border: 1px solid black;
-    		border-collapse: collapse;*/
-    		/*margin-top: -5px;*/
 
     	}
-/*
-    	table,td {
-    		border: 1px solid black;
-    		border-collapse: collapse;
-    	}*/
 
 		.rowbatch1::after {
 			content: "";
@@ -70,7 +60,6 @@
 
 		.columnbatch2 {
 			float: left;
-			/*column-gap: 5px;*/
 			margin-right: 2px;
 			width: 130px;
 			border : 3px solid black;
@@ -99,16 +88,10 @@
 			margin-top: 5px;
 			font-weight: bold;
 			background-color: #9f9fdf;
-/*			height: 20px;
-			width: 20px;*/
 			border : 2px solid;
 			padding: 5px;
 			
 		}
-/*		.boxresearchlist img {
-			 display:block;
-		}*/
-
     </style>
 
 </head>
@@ -185,17 +168,17 @@
 						<table>
 							<tr>
 								<!-- <td>Unlock requirement: 20 Royal Navy Frontline Ship</td> -->
-								<td>{{ tr1 }}</td>
+								<td>{{ tr1nep }}</td>
 							</tr>
 
 							<tr>
-								<td>{{ tr2 }}</td>
+								<td>{{ tr2nep }}</td>
 							</tr>
 							<tr>
-								<td>{{ tr3 }}</td>
+								<td>{{ tr3nep }}</td>
 							</tr>
 							<tr>
-								<td>{{ tr4 }}</td>
+								<td>{{ tr4nep }}</td>
 							</tr>
 							<tr>
 								<td></td>
@@ -288,6 +271,7 @@
 	
 </script>
 
+<script src="node_modules/vue/dist/vue.min.js"></script>
 <script type="text/javascript" src="javascript/research.js"></script>
 <script type="text/javascript" src="javascript/questbox.js"></script>
 
